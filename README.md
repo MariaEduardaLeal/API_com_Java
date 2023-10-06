@@ -27,6 +27,6 @@ classDiagram
         - comment: String
     }
 
-    Book "1" *-- "1..N" Character
-    Book "1" *-- "1..N" Review
+    Book "1" *-- "N" Character
+    Book "1" *-- "N" Review
 ```
