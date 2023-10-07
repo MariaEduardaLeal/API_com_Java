@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  # Console H2 para desenvolvimento
+  h2:
+    console:
+      enabled: true
+
+  # Configuração JPA
+  jpa:
+    hibernate:
+      ddl-auto: update # Modo de atualização automática do esquema do banco de dados
+    show-sql: true # Exibir SQL no console
+
+  # Configurações personalizadas
+  me:
+    dio:
+      domain:
+        model:
+          package: me.dio.domain.model
